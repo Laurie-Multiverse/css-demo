@@ -3,11 +3,53 @@ ol li {
     background-color: lightgreen;
 }
 
+ol, ul {
+    display: flex;
+    /* border: 2px black solid; */
+}
+
+ol {
+    flex-direction: row;
+    height: 40vh;
+    justify-content: space-between;
+    align-items:last baseline;
+}
+
+ul {
+    flex-direction: column;
+    height: 40vh;
+    justify-content:space-around;
+}
+
+
+img {
+    border: 3px solid blue;
+    border-radius: 50%;
+}
+
 .middle {
     background-color: yellow;
+    /* padding: 20px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: black 2px solid; */
+    margin: 5px; 
 }
 
 #hobbies {
     color: blue;
     font-size: 10px;
 }
+
+/*
+    Box model
+
+    content in the middle, surrounded by: padding, border, margin
+*/
+
+/*
+    Flex Box
+
+    set the container display to flex
+    set a ton of other options
+*/
